@@ -1,0 +1,1986 @@
+[
+  {
+    "subject": "[PATCH v3 1/4] net/core: optimize skb allocation in high-throughput drivers",
+    "body": "From: Linus W <developer@kernel.org>\nTo: netdev@vger.kernel.org\n\nThis patch reduces cache-line bouncing during skb allocation by prefetching the ring buffer descriptor earlier in the napi_poll loop.\n\nTested with ixgbe on 10GbE interface with 1500 byte MTU.\nPerformance results showed a 4.2% increase in packets per second.\n\nSigned-off-by: Linus W <developer@kernel.org>\nAcked-by: Dave M <davem@davemloft.net>",
+    "label": 0,
+    "category": "technical_mailing_list",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_technical_mailing_list_0"
+  },
+  {
+    "subject": "Sprint Planning Agenda - Q4 Infrastructure Modernization",
+    "body": "Hi team,\n\nOur sprint planning meeting is scheduled for tomorrow at 10:30 AM in Conference Room B and via Google Meet.\n\nAgenda items:\n1. Review velocity and completed story points from Sprint 42.\n2. Architecture review for the Kubernetes migration.\n3. Ticket grooming for database replication setup.\n\nPlease ensure your Jira boards are updated before end of day today.\n\nBest regards,\nSarah Jenkins\nEngineering Manager",
+    "label": 0,
+    "category": "corporate_workplace",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_corporate_workplace_0"
+  },
+  {
+    "subject": "Your flight reservation is confirmed: SFO to ORD (Booking Ref: #KJ894L)",
+    "body": "Thank you for booking with Horizon Air.\n\nFlight Details:\nPassenger: David Miller\nFlight: HA 482\nDeparture: San Francisco International (SFO) - Oct 24, 08:15 AM\nArrival: Chicago O'Hare (ORD) - Oct 24, 02:30 PM\nSeat: 14C (Window)\n\nYou can manage your reservation or check in online 24 hours prior to departure at our official portal.",
+    "label": 0,
+    "category": "transactional_travel",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_transactional_travel_0"
+  },
+  {
+    "subject": "Antigravity Release Notes v2.4.0: Faster builds and improved profiling",
+    "body": "Dear Developer,\n\nWe are excited to announce Antigravity v2.4.0 with major performance improvements.\n\nWhat is new:\n- 30% reduction in cold start compilation times\n- Native debugging support for Apple Silicon and Linux aarch64\n- Extended memory profiling tools in the developer dashboard\n\nTo update your local toolchain, run 'antigravity update' in your terminal. For full release notes and migration guides, visit our documentation site.",
+    "label": 0,
+    "category": "developer_newsletter",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_developer_newsletter_0"
+  },
+  {
+    "subject": "नमस्ते - कल की प्रोजेक्ट समीक्षा बैठक का समय",
+    "body": "नमस्ते अनुराग,\n\nआशा है आप सकुशल हैं। हमारी आगामी प्रोजेक्ट समीक्षा बैठक कल सुबह 11:00 बजे निर्धारित की गई है।\n\nकृपया अपने नवीनतम कोड परिवर्तनों और यूनिट टेस्ट रिपोर्ट को गिट रिपॉजिटरी में पुश कर दें ताकि हम कल की चर्चा में समीक्षा कर सकें।\n\nधन्यवाद,\nविकास टीम",
+    "label": 0,
+    "category": "multilingual_work",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_multilingual_work_0"
+  },
+  {
+    "subject": "Quarterly Financial Results and Shareholder Meeting Summary",
+    "body": "Dear Shareholders and Partners,\n\nAttached is our summary report for the third quarter ending September 30.\n\nKey Highlights:\n- Total revenue increased by 14% year-over-year\n- Operating expenses remained within projected budget variance\n- R&D investment continued as planned in core cloud architecture\n\nThe full 10-Q filing is available on EDGAR and our investor relations portal.",
+    "label": 0,
+    "category": "corporate_finance",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_corporate_finance_0"
+  },
+  {
+    "subject": "Weekend hiking and camping trip - Gear list and trail map",
+    "body": "Hey everyone,\n\nExcited for our trip to Mount Tamalpais this Saturday! Weather forecast looks crisp and clear with daytime highs around 65F.\n\nQuick checklist:\n- Sturdy hiking boots\n- At least 2.5 liters of water\n- Trail snacks and packed lunch\n- Sunscreen and light layers\n\nLet us meet at the trailhead parking lot at 7:45 AM so we can start hiking before the crowds arrive.",
+    "label": 0,
+    "category": "personal_social",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_personal_social_0"
+  },
+  {
+    "subject": "University Library: Courtesy notice for upcoming book return date",
+    "body": "Dear Student,\n\nThis is an automated courtesy reminder that the following item(s) checked out from the Engineering Library are due in 3 days:\n\nTitle: Introduction to Statistical Learning with Applications in R\nBarcode: 3908801948271\nDue Date: October 18, 2026\n\nYou may renew your loans online through the library portal if no holds have been placed by other researchers.",
+    "label": 0,
+    "category": "academic_library",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_academic_library_0"
+  },
+  {
+    "subject": "Invitation: Python Machine Learning User Group Meetup - Nov 5",
+    "body": "Hello Pythonistas,\n\nJoin us for our monthly meetup on Thursday, November 5 at the Downtown Tech Hub.\n\nSpeaker: Dr. Elena Rostova\nTopic: Practical Explainability in High-Dimensional Linear Classifiers\nTime: 6:30 PM - 8:30 PM\nDoors open at 6:00 PM for pizza and networking.\n\nPlease RSVP on our community page so we have an accurate headcount for catering.",
+    "label": 0,
+    "category": "community_tech",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_community_tech_0"
+  },
+  {
+    "subject": "Security audit complete: No critical vulnerabilities discovered in auth service",
+    "body": "Team,\n\nThe external penetration testing team has concluded their bi-annual assessment of our authentication microservice.\n\nFindings:\n- 0 Critical vulnerabilities\n- 0 High vulnerabilities\n- 2 Medium severity configuration findings (documented in SEC-409)\n- 1 Low severity informational finding\n\nRemediation tasks have been logged in Jira and scheduled for Sprint 44.",
+    "label": 0,
+    "category": "security_report",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_security_report_0"
+  },
+  {
+    "subject": "Feedback on your recent pull request #284 (Refactor query optimizer)",
+    "body": "Hi Alex,\n\nI reviewed your PR #284. The logic for predicate pushdown looks clean, and the benchmarks show a nice 12% latency drop on joins.\n\nLeft a couple of minor comments regarding boundary checks on empty result sets in database/query/planner.go.\n\nOnce those are addressed, feel free to merge.\n\nThanks,\nMarcus",
+    "label": 0,
+    "category": "developer_code_review",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_developer_code_review_0"
+  },
+  {
+    "subject": "Order Confirmation: Your GreenGrocer delivery #GG-81920",
+    "body": "Hello,\n\nYour order has been received and is being prepared by our local market team.\n\nItems:\n- Organic Whole Milk (1 Gallon) - $4.99\n- Sourdough Bread Loaf - $5.50\n- Honeycrisp Apples (3 lbs) - $6.99\n- Fresh Spinach (16 oz) - $3.49\n\nEstimated Delivery Time: Today between 4:00 PM and 6:00 PM.\nDriver instructions: Leave at front porch.",
+    "label": 0,
+    "category": "transactional_ecommerce",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_transactional_ecommerce_0"
+  },
+  {
+    "subject": "URGENT NOTICE: Your Chase Online Banking Access Has Been Suspended",
+    "body": "Dear Valued Customer,\n\nWe detected suspicious unauthorized login attempts on your Chase checking account from an unrecognized IP address in Moscow, Russia.\n\nTo safeguard your funds and prevent permanent account termination, you must verify your identity immediately.\n\nClick the link below to verify your account credentials, social security number, and debit card PIN:\nhttp://chase-security-verification-portal.online/login?ref=urgent\n\nFailure to verify within 12 hours will result in permanent account closure and forfeiture of funds.\n\nChase Fraud Prevention Department",
+    "label": 1,
+    "category": "phishing_banking",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_phishing_banking_1"
+  },
+  {
+    "subject": "CONFIDENTIAL PROPOSAL: Transfer of $38.5 Million USD Unclaimed Estate",
+    "body": "Dearest Friend,\n\nI am Barrister Kenneth Adeleke, personal attorney to the late engineer Dr. George Vance, who passed away in a tragic accident leaving behind an unclaimed estate of $38,500,000.00 (Thirty Eight Million, Five Hundred Thousand United States Dollars) in a private security vault in Lagos.\n\nBecause you share a similar surname, I seek your urgent consent to present you as the next of kin to the bank.\n\nYou will receive 40% of the total sum for your cooperation and assistance.\n\nPlease reply immediately with your full name, telephone number, passport copy, and nearest international airport.\n\nYours faithfully,\nBarrister Kenneth Adeleke (SAN)",
+    "label": 1,
+    "category": "financial_scam_419",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_financial_scam_419_1"
+  },
+  {
+    "subject": "CONGRATULATIONS! You have won $1,000,000 in the International Mega Draw Lottery",
+    "body": "Official Winner Notification!\n\nYour email address was selected as the 1st prize winner in the 2026 International Global Telecom Lottery Program.\n\nWinning Numbers: 09-18-27-36-45\nBatch Reference: MEGA-990-2026\nPayout Amount: $1,000,000.00 USD cash lump sum!\n\nTo claim your cash prize, contact our claims officer Dr. Robert Campbell immediately. A nominal processing and clearance courier fee of $350 is required before dispatch of your winning cashier check.\n\nSend payment via Western Union or Crypto immediately to avoid forfeiture.",
+    "label": 1,
+    "category": "lottery_scam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_lottery_scam_1"
+  },
+  {
+    "subject": "GUARANTEED 850% Weekly ROI with Quantum AI Bitcoin Auto-Trader!",
+    "body": "Tired of your 9-to-5 job? Let artificial intelligence make you rich while you sleep!\n\nOur proprietary Quantum Crypto Bot generates over 850% return on investment every single week with zero risk. Celebrities and billionaires are secretly using this automated algorithm.\n\nStart today with a deposit of only $250 and watch your balance grow to $10,000 within 7 days!\n\nSpots are limited to the first 50 sign-ups!\nSign up here now: http://quantum-profit-hyper-returns.biz/join?aff=bot99\n\nWithdraw your profits instantly anytime to your bank account or crypto wallet.",
+    "label": 1,
+    "category": "crypto_scam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_crypto_scam_1"
+  },
+  {
+    "subject": "Your Netflix Membership is On Hold - Update Payment Information",
+    "body": "Hi Customer,\n\nWe were unable to process your monthly subscription fee for your Netflix account because your payment card was declined by your financial institution.\n\nYour streaming service will be terminated within 24 hours unless you update your billing details immediately.\n\nClick here to update your payment method:\nhttp://netflix-billing-update-center-auth.cc/renew\n\nEnjoy movies and TV shows anytime, anywhere.\nNetflix Support Team",
+    "label": 1,
+    "category": "phishing_streaming",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_phishing_streaming_1"
+  },
+  {
+    "subject": "बधाई हो! आपका मोबाइल नंबर 25,00,000 रुपये के लकी ड्रा में चुना गया है",
+    "body": "प्रिय ग्राहक,\n\nशुभ समाचार! आपका मोबाइल नंबर अखिल भारतीय टेलीकॉम लकी ड्रा 2026 में 25 लाख रुपये के नकद पुरस्कार का विजेता चुना गया है।\n\nपुरस्कार राशि तुरंत अपने बैंक खाते में ट्रांसफर करने के लिए, नीचे दिए गए लिंक पर क्लिक करें और अपना बैंक विवरण और आधार कार्ड नंबर दर्ज करें:\nhttp://all-india-lucky-lottery-claim.xyz/prizes\n\nयह ऑफर केवल अगले 4 घंटों के लिए वैध है। देर न करें, तुरंत दावा करें!",
+    "label": 1,
+    "category": "multilingual_spam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_multilingual_spam_1"
+  },
+  {
+    "subject": "CHEAP CANADIAN PHARMACY: Cialis, Viagra, Tramadol at 90% OFF retail price!",
+    "body": "Special Clearance Sale!\n\nOrder FDA-approved medications online without a prescription!\n\n- Generic Viagra 100mg - only $0.65 per pill!\n- Generic Cialis 20mg - only $0.75 per pill!\n- Fast discrete worldwide airmail shipping in unbranded boxes.\n- 100% satisfaction guarantee or full refund!\n\nOrder today: http://top-discount-meds-rx24.ru/catalog\nNo doctor consultation needed!",
+    "label": 1,
+    "category": "pharmacy_spam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_pharmacy_spam_1"
+  },
+  {
+    "subject": "Microsoft 365: Your Password Expires in 2 Hours - Keep Current Password",
+    "body": "Office 365 IT Helpdesk Alert\n\nYour corporate domain password is set to expire today in 2 hours.\n\nTo prevent interruption to your Outlook mailbox, SharePoint access, and company OneDrive documents, you can choose to retain your current password by verifying your login.\n\nClick here: Keep Current Password Now\nhttp://office365-security-credential-portal.tk/sso/verify\n\nRequests submitted after expiration will require an in-person IT department visit.\nSystem Administrator",
+    "label": 1,
+    "category": "phishing_credential_harvesting",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_phishing_credential_harvesting_1"
+  },
+  {
+    "subject": "WORK FROM HOME: Earn $4,500/week stuffing envelopes and taking surveys",
+    "body": "Earn extra income from the comfort of your living room!\n\nMajor Fortune 500 corporations are hiring online survey takers, data entry clerks, and package forwarding assistants. No previous experience required!\n\nPay: $45 - $85 per hour, paid weekly directly into your bank account.\nWork flexible hours (2-3 hours per day).\n\nLimited openings available in your postal code.\nApply immediately at: http://cash-easy-income-online-careers.info/apply",
+    "label": 1,
+    "category": "work_from_home_scam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_work_from_home_scam_1"
+  },
+  {
+    "subject": "FINAL NOTICE: Claim your $500 Amazon Gift Card reward voucher",
+    "body": "You have been selected as today's winner for an unredeemed $500 Amazon Shopping Spree Card!\n\nClaim Code: AMZ-500-GIFT-991\nStatus: Pending Final Confirmation\n\nClick the link below to confirm your shipping address and complete a 2-minute sponsor survey to receive your gift card code via email:\nhttp://exclusive-rewards-shopper-vault.club/claim\n\nHurry! Unclaimed cards will be transferred to the next eligible entrant at midnight.",
+    "label": 1,
+    "category": "reward_voucher_spam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_reward_voucher_spam_1"
+  },
+  {
+    "subject": "Exclusive pre-approved business loan: Get up to $250,000 cash with no credit check!",
+    "body": "Need working capital for your business? We approve fast!\n\n- No collateral required\n- No credit score check\n- Approval in under 15 minutes\n- Funds wired to your account in 24 hours\n\nInterest rates as low as 1.5% fixed APR!\n\nApply now before government stimulus credits expire: http://instant-cash-capital-funding.net/apply-now\nReply STOP to unsubscribe.",
+    "label": 1,
+    "category": "loan_spam",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_loan_spam_1"
+  },
+  {
+    "subject": "DHL Express: Delivery failure notice for package #DH-782194-US",
+    "body": "DHL Express Tracking Alert\n\nYour parcel could not be delivered on Oct 12 due to an incomplete delivery address provided on the shipping label.\n\nThe parcel is currently held at our regional dispatch hub. An administrative redelivery fee of $2.95 is required to reschedule delivery.\n\nDownload and print your shipping receipt to confirm your address:\nhttp://dhl-express-reschedule-delivery-online.me/tracking.php?id=99281\n\nItems not claimed within 48 hours will be destroyed at sender expense.",
+    "label": 1,
+    "category": "delivery_phishing",
+    "provenance": "curated_seed",
+    "group_id": "grp_base_delivery_phishing_1"
+  },
+  {
+    "subject": "Meeting Notes: Distributed Cache sync #1617",
+    "body": "Hi team,\n\nHere are the key takeaways from our Distributed Cache meeting #1617:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nPriya Sharma",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Auth Service sync #1624",
+    "body": "Hi team,\n\nHere are the key takeaways from our Auth Service meeting #1624:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nDavid Chen",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: ML Pipeline sync #1631",
+    "body": "Hi team,\n\nHere are the key takeaways from our ML Pipeline meeting #1631:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nSarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Kubernetes Ingress sync #1638",
+    "body": "Hi team,\n\nHere are the key takeaways from our Kubernetes Ingress meeting #1638:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nMichael Scott",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Billing Microservice sync #1645",
+    "body": "Hi team,\n\nHere are the key takeaways from our Billing Microservice meeting #1645:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nElena Rostova",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Search Indexer sync #1652",
+    "body": "Hi team,\n\nHere are the key takeaways from our Search Indexer meeting #1652:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nMarcus Vance",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Audit Logging sync #1659",
+    "body": "Hi team,\n\nHere are the key takeaways from our Audit Logging meeting #1659:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nAmit Patel",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Distributed Cache sync #1666",
+    "body": "Hi team,\n\nHere are the key takeaways from our Distributed Cache meeting #1666:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nPriya Sharma",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Auth Service sync #1673",
+    "body": "Hi team,\n\nHere are the key takeaways from our Auth Service meeting #1673:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nDavid Chen",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: ML Pipeline sync #1680",
+    "body": "Hi team,\n\nHere are the key takeaways from our ML Pipeline meeting #1680:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nSarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Kubernetes Ingress sync #1687",
+    "body": "Hi team,\n\nHere are the key takeaways from our Kubernetes Ingress meeting #1687:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nMichael Scott",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Billing Microservice sync #1694",
+    "body": "Hi team,\n\nHere are the key takeaways from our Billing Microservice meeting #1694:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nElena Rostova",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Search Indexer sync #1701",
+    "body": "Hi team,\n\nHere are the key takeaways from our Search Indexer meeting #1701:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nMarcus Vance",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Meeting Notes: Audit Logging sync #1708",
+    "body": "Hi team,\n\nHere are the key takeaways from our Audit Logging meeting #1708:\n1. We finalized the architecture specifications.\n2. Alex will submit the pull request by Wednesday.\n3. Next review is scheduled for Friday morning.\n\nPlease confirm action items online within 24 hours so we can finalize the sprint board.\n\nBest,\nAmit Patel",
+    "label": 0,
+    "category": "grp_ham_meeting",
+    "group_id": "grp_ham_meeting",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1797: distributed-cache refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/distributed-cache-cleanup (PR #1797).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nPriya Sharma",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1804: auth-service refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/auth-service-cleanup (PR #1804).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nDavid Chen",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1811: ml-pipeline refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/ml-pipeline-cleanup (PR #1811).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nSarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1818: kubernetes-ingress refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/kubernetes-ingress-cleanup (PR #1818).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nMichael Scott",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1825: billing-microservice refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/billing-microservice-cleanup (PR #1825).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nElena Rostova",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1832: search-indexer refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/search-indexer-cleanup (PR #1832).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nMarcus Vance",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1839: audit-logging refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/audit-logging-cleanup (PR #1839).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nAmit Patel",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1846: distributed-cache refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/distributed-cache-cleanup (PR #1846).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nPriya Sharma",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1853: auth-service refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/auth-service-cleanup (PR #1853).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nDavid Chen",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1860: ml-pipeline refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/ml-pipeline-cleanup (PR #1860).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nSarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1867: kubernetes-ingress refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/kubernetes-ingress-cleanup (PR #1867).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nMichael Scott",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1874: billing-microservice refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/billing-microservice-cleanup (PR #1874).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nElena Rostova",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1881: search-indexer refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/search-indexer-cleanup (PR #1881).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nMarcus Vance",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Code review request PR #1888: audit-logging refactoring",
+    "body": "Hello,\n\nPlease review the changes in branch feature/audit-logging-cleanup (PR #1888).\nUnit tests pass locally and static analysis shows 0 errors.\nPlease submit your review feedback online within 24 hours before our release cut.\n\nRegards,\nAmit Patel",
+    "label": 0,
+    "category": "grp_ham_codereview",
+    "group_id": "grp_ham_codereview",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at TechGear Direct - Order #1523",
+    "body": "Thank you for shopping at TechGear Direct.\n\nOrder ID: #1523\nDate: Oct 14, 2026\nSubtotal: $15.00\nTax: $2.40\nTotal Paid: $17.40 via Visa ending in 4000.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at FreshGrocer - Order #1530",
+    "body": "Thank you for shopping at FreshGrocer.\n\nOrder ID: #1530\nDate: Oct 14, 2026\nSubtotal: $27.50\nTax: $2.40\nTotal Paid: $29.90 via Visa ending in 4017.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at CloudBooks - Order #1537",
+    "body": "Thank you for shopping at CloudBooks.\n\nOrder ID: #1537\nDate: Oct 14, 2026\nSubtotal: $40.00\nTax: $2.40\nTotal Paid: $42.40 via Visa ending in 4034.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Apex Hardware - Order #1544",
+    "body": "Thank you for shopping at Apex Hardware.\n\nOrder ID: #1544\nDate: Oct 14, 2026\nSubtotal: $52.50\nTax: $2.40\nTotal Paid: $54.90 via Visa ending in 4051.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Metro Coffee Roasters - Order #1551",
+    "body": "Thank you for shopping at Metro Coffee Roasters.\n\nOrder ID: #1551\nDate: Oct 14, 2026\nSubtotal: $65.00\nTax: $2.40\nTotal Paid: $67.40 via Visa ending in 4068.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Urban Apparel - Order #1558",
+    "body": "Thank you for shopping at Urban Apparel.\n\nOrder ID: #1558\nDate: Oct 14, 2026\nSubtotal: $77.50\nTax: $2.40\nTotal Paid: $79.90 via Visa ending in 4085.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Nordic Home - Order #1565",
+    "body": "Thank you for shopping at Nordic Home.\n\nOrder ID: #1565\nDate: Oct 14, 2026\nSubtotal: $90.00\nTax: $2.40\nTotal Paid: $92.40 via Visa ending in 4102.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at TechGear Direct - Order #1572",
+    "body": "Thank you for shopping at TechGear Direct.\n\nOrder ID: #1572\nDate: Oct 14, 2026\nSubtotal: $102.50\nTax: $2.40\nTotal Paid: $104.90 via Visa ending in 4119.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at FreshGrocer - Order #1579",
+    "body": "Thank you for shopping at FreshGrocer.\n\nOrder ID: #1579\nDate: Oct 14, 2026\nSubtotal: $115.00\nTax: $2.40\nTotal Paid: $117.40 via Visa ending in 4136.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at CloudBooks - Order #1586",
+    "body": "Thank you for shopping at CloudBooks.\n\nOrder ID: #1586\nDate: Oct 14, 2026\nSubtotal: $127.50\nTax: $2.40\nTotal Paid: $129.90 via Visa ending in 4153.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Apex Hardware - Order #1593",
+    "body": "Thank you for shopping at Apex Hardware.\n\nOrder ID: #1593\nDate: Oct 14, 2026\nSubtotal: $140.00\nTax: $2.40\nTotal Paid: $142.40 via Visa ending in 4170.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Metro Coffee Roasters - Order #1600",
+    "body": "Thank you for shopping at Metro Coffee Roasters.\n\nOrder ID: #1600\nDate: Oct 14, 2026\nSubtotal: $152.50\nTax: $2.40\nTotal Paid: $154.90 via Visa ending in 4187.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Urban Apparel - Order #1607",
+    "body": "Thank you for shopping at Urban Apparel.\n\nOrder ID: #1607\nDate: Oct 14, 2026\nSubtotal: $165.00\nTax: $2.40\nTotal Paid: $167.40 via Visa ending in 4204.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Receipt for your purchase at Nordic Home - Order #1614",
+    "body": "Thank you for shopping at Nordic Home.\n\nOrder ID: #1614\nDate: Oct 14, 2026\nSubtotal: $177.50\nTax: $2.40\nTotal Paid: $179.90 via Visa ending in 4221.\n\nItems have been dispatched and will arrive in 2 business days.\nCustomer care is available online 24 hours a day for order tracking and returns.",
+    "label": 0,
+    "category": "grp_ham_receipt_retail",
+    "group_id": "grp_ham_receipt_retail",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from CloudVantage - #1398",
+    "body": "Hello Priya Sharma,\n\nYour monthly billing statement for CloudVantage cloud infrastructure is ready.\n\nAccount ID: ACCT-1398\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1398\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $15.00\nVAT / Tax: $4.50\nTotal Amount: $17.40\nStatus: Paid automatically via Mastercard ending in 4000.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ApexCloud - #1405",
+    "body": "Hello David Chen,\n\nYour monthly billing statement for ApexCloud cloud infrastructure is ready.\n\nAccount ID: ACCT-1405\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1405\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $27.50\nVAT / Tax: $4.50\nTotal Amount: $29.90\nStatus: Paid automatically via Mastercard ending in 4017.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from DataSphere - #1412",
+    "body": "Hello Sarah Jenkins,\n\nYour monthly billing statement for DataSphere cloud infrastructure is ready.\n\nAccount ID: ACCT-1412\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1412\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $40.00\nVAT / Tax: $4.50\nTotal Amount: $42.40\nStatus: Paid automatically via Mastercard ending in 4034.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from HostMatrix - #1419",
+    "body": "Hello Michael Scott,\n\nYour monthly billing statement for HostMatrix cloud infrastructure is ready.\n\nAccount ID: ACCT-1419\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1419\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $52.50\nVAT / Tax: $4.50\nTotal Amount: $54.90\nStatus: Paid automatically via Mastercard ending in 4051.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ServerStream - #1426",
+    "body": "Hello Elena Rostova,\n\nYour monthly billing statement for ServerStream cloud infrastructure is ready.\n\nAccount ID: ACCT-1426\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1426\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $65.00\nVAT / Tax: $4.50\nTotal Amount: $67.40\nStatus: Paid automatically via Mastercard ending in 4068.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from CloudForge - #1433",
+    "body": "Hello Marcus Vance,\n\nYour monthly billing statement for CloudForge cloud infrastructure is ready.\n\nAccount ID: ACCT-1433\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1433\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $77.50\nVAT / Tax: $4.50\nTotal Amount: $79.90\nStatus: Paid automatically via Mastercard ending in 4085.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ScaleGrid - #1440",
+    "body": "Hello Amit Patel,\n\nYour monthly billing statement for ScaleGrid cloud infrastructure is ready.\n\nAccount ID: ACCT-1440\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1440\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $90.00\nVAT / Tax: $4.50\nTotal Amount: $92.40\nStatus: Paid automatically via Mastercard ending in 4102.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from CloudVantage - #1447",
+    "body": "Hello Priya Sharma,\n\nYour monthly billing statement for CloudVantage cloud infrastructure is ready.\n\nAccount ID: ACCT-1447\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1447\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $102.50\nVAT / Tax: $4.50\nTotal Amount: $104.90\nStatus: Paid automatically via Mastercard ending in 4119.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ApexCloud - #1454",
+    "body": "Hello David Chen,\n\nYour monthly billing statement for ApexCloud cloud infrastructure is ready.\n\nAccount ID: ACCT-1454\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1454\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $115.00\nVAT / Tax: $4.50\nTotal Amount: $117.40\nStatus: Paid automatically via Mastercard ending in 4136.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from DataSphere - #1461",
+    "body": "Hello Sarah Jenkins,\n\nYour monthly billing statement for DataSphere cloud infrastructure is ready.\n\nAccount ID: ACCT-1461\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1461\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $127.50\nVAT / Tax: $4.50\nTotal Amount: $129.90\nStatus: Paid automatically via Mastercard ending in 4153.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from HostMatrix - #1468",
+    "body": "Hello Michael Scott,\n\nYour monthly billing statement for HostMatrix cloud infrastructure is ready.\n\nAccount ID: ACCT-1468\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1468\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $140.00\nVAT / Tax: $4.50\nTotal Amount: $142.40\nStatus: Paid automatically via Mastercard ending in 4170.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ServerStream - #1475",
+    "body": "Hello Elena Rostova,\n\nYour monthly billing statement for ServerStream cloud infrastructure is ready.\n\nAccount ID: ACCT-1475\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1475\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $152.50\nVAT / Tax: $4.50\nTotal Amount: $154.90\nStatus: Paid automatically via Mastercard ending in 4187.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from CloudForge - #1482",
+    "body": "Hello Marcus Vance,\n\nYour monthly billing statement for CloudForge cloud infrastructure is ready.\n\nAccount ID: ACCT-1482\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1482\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $165.00\nVAT / Tax: $4.50\nTotal Amount: $167.40\nStatus: Paid automatically via Mastercard ending in 4204.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Your monthly invoice from ScaleGrid - #1489",
+    "body": "Hello Amit Patel,\n\nYour monthly billing statement for ScaleGrid cloud infrastructure is ready.\n\nAccount ID: ACCT-1489\nBilling Period: Sep 1 - Sep 30, 2026\nInvoice Number: INV-1489\nServices: Managed Database, Compute Instances, Storage Volumes\nSubtotal: $177.50\nVAT / Tax: $4.50\nTotal Amount: $179.90\nStatus: Paid automatically via Mastercard ending in 4221.\n\nOur billing helpdesk is available online 24 hours a day. Download your VAT tax invoice from your console dashboard.",
+    "label": 0,
+    "category": "grp_ham_invoice_cloud",
+    "group_id": "grp_ham_invoice_cloud",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1402: $15.00 at TechGear Direct",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $15.00 was authorized on your debit card ending in 4000 at TechGear Direct on Oct 14, 2026 (Ref #1402).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1409: $27.50 at FreshGrocer",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $27.50 was authorized on your debit card ending in 4017 at FreshGrocer on Oct 14, 2026 (Ref #1409).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1416: $40.00 at CloudBooks",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $40.00 was authorized on your debit card ending in 4034 at CloudBooks on Oct 14, 2026 (Ref #1416).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1423: $52.50 at Apex Hardware",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $52.50 was authorized on your debit card ending in 4051 at Apex Hardware on Oct 14, 2026 (Ref #1423).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1430: $65.00 at Metro Coffee Roasters",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $65.00 was authorized on your debit card ending in 4068 at Metro Coffee Roasters on Oct 14, 2026 (Ref #1430).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1437: $77.50 at Urban Apparel",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $77.50 was authorized on your debit card ending in 4085 at Urban Apparel on Oct 14, 2026 (Ref #1437).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1444: $90.00 at Nordic Home",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $90.00 was authorized on your debit card ending in 4102 at Nordic Home on Oct 14, 2026 (Ref #1444).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1451: $102.50 at TechGear Direct",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $102.50 was authorized on your debit card ending in 4119 at TechGear Direct on Oct 14, 2026 (Ref #1451).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1458: $115.00 at FreshGrocer",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $115.00 was authorized on your debit card ending in 4136 at FreshGrocer on Oct 14, 2026 (Ref #1458).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1465: $127.50 at CloudBooks",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $127.50 was authorized on your debit card ending in 4153 at CloudBooks on Oct 14, 2026 (Ref #1465).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1472: $140.00 at Apex Hardware",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $140.00 was authorized on your debit card ending in 4170 at Apex Hardware on Oct 14, 2026 (Ref #1472).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1479: $152.50 at Metro Coffee Roasters",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $152.50 was authorized on your debit card ending in 4187 at Metro Coffee Roasters on Oct 14, 2026 (Ref #1479).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1486: $165.00 at Urban Apparel",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $165.00 was authorized on your debit card ending in 4204 at Urban Apparel on Oct 14, 2026 (Ref #1486).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Transaction Alert #1493: $177.50 at Nordic Home",
+    "body": "Security Notification from First National Bank:\n\nA purchase of $177.50 was authorized on your debit card ending in 4221 at Nordic Home on Oct 14, 2026 (Ref #1493).\n\nAvailable account balance: $4,290.15.\n\nIf you recognize this transaction, no action is required.\nIf you did not authorize this charge, lock your card online or call customer care available 24 hours a day.",
+    "label": 0,
+    "category": "grp_ham_banking_alert",
+    "group_id": "grp_ham_banking_alert",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation K9L82P to Chicago (ORD)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: K9L82P\nPassenger: Priya Sharma\nFlight: HA-1786 to Chicago (ORD)\nDeparture: 08:45 AM\nTotal Fare: $15.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4000.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation M4N91X to New York (JFK)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: M4N91X\nPassenger: David Chen\nFlight: HA-1793 to New York (JFK)\nDeparture: 08:45 AM\nTotal Fare: $27.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4017.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation R7T34Q to Seattle (SEA)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: R7T34Q\nPassenger: Sarah Jenkins\nFlight: HA-1800 to Seattle (SEA)\nDeparture: 08:45 AM\nTotal Fare: $40.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4034.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation B2V88W to London (LHR)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: B2V88W\nPassenger: Michael Scott\nFlight: HA-1807 to London (LHR)\nDeparture: 08:45 AM\nTotal Fare: $52.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4051.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation H5J61Z to Austin (AUS)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: H5J61Z\nPassenger: Elena Rostova\nFlight: HA-1814 to Austin (AUS)\nDeparture: 08:45 AM\nTotal Fare: $65.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4068.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation C3X72Y to Denver (DEN)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: C3X72Y\nPassenger: Marcus Vance\nFlight: HA-1821 to Denver (DEN)\nDeparture: 08:45 AM\nTotal Fare: $77.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4085.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation P8M45L to Boston (BOS)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: P8M45L\nPassenger: Amit Patel\nFlight: HA-1828 to Boston (BOS)\nDeparture: 08:45 AM\nTotal Fare: $90.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4102.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation K9L82P to Chicago (ORD)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: K9L82P\nPassenger: Priya Sharma\nFlight: HA-1835 to Chicago (ORD)\nDeparture: 08:45 AM\nTotal Fare: $102.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4119.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation M4N91X to New York (JFK)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: M4N91X\nPassenger: David Chen\nFlight: HA-1842 to New York (JFK)\nDeparture: 08:45 AM\nTotal Fare: $115.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4136.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation R7T34Q to Seattle (SEA)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: R7T34Q\nPassenger: Sarah Jenkins\nFlight: HA-1849 to Seattle (SEA)\nDeparture: 08:45 AM\nTotal Fare: $127.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4153.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation B2V88W to London (LHR)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: B2V88W\nPassenger: Michael Scott\nFlight: HA-1856 to London (LHR)\nDeparture: 08:45 AM\nTotal Fare: $140.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4170.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation H5J61Z to Austin (AUS)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: H5J61Z\nPassenger: Elena Rostova\nFlight: HA-1863 to Austin (AUS)\nDeparture: 08:45 AM\nTotal Fare: $152.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4187.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation C3X72Y to Denver (DEN)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: C3X72Y\nPassenger: Marcus Vance\nFlight: HA-1870 to Denver (DEN)\nDeparture: 08:45 AM\nTotal Fare: $165.00 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4204.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Confirmed: Flight reservation P8M45L to Boston (BOS)",
+    "body": "Thank you for booking with Horizon Air.\n\nConfirmation Code: P8M45L\nPassenger: Amit Patel\nFlight: HA-1877 to Boston (BOS)\nDeparture: 08:45 AM\nTotal Fare: $177.50 (Taxes and airport security fees included).\nPayment: Confirmed via Amex ending in 4221.\n\nManage your itinerary online or check in 24 hours prior to departure.",
+    "label": 0,
+    "category": "grp_ham_travel_booking",
+    "group_id": "grp_ham_travel_booking",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1840: Highlights from CloudVantage",
+    "body": "In this week's edition #1840:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1847: Highlights from ApexCloud",
+    "body": "In this week's edition #1847:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1854: Highlights from DataSphere",
+    "body": "In this week's edition #1854:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1861: Highlights from HostMatrix",
+    "body": "In this week's edition #1861:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1868: Highlights from ServerStream",
+    "body": "In this week's edition #1868:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1875: Highlights from CloudForge",
+    "body": "In this week's edition #1875:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1882: Highlights from ScaleGrid",
+    "body": "In this week's edition #1882:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1889: Highlights from CloudVantage",
+    "body": "In this week's edition #1889:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1896: Highlights from ApexCloud",
+    "body": "In this week's edition #1896:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1903: Highlights from DataSphere",
+    "body": "In this week's edition #1903:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1910: Highlights from HostMatrix",
+    "body": "In this week's edition #1910:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1917: Highlights from ServerStream",
+    "body": "In this week's edition #1917:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1924: Highlights from CloudForge",
+    "body": "In this week's edition #1924:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Weekly Newsletter Issue #1931: Highlights from ScaleGrid",
+    "body": "In this week's edition #1931:\n- Deep dive into scalable database replication\n- Interview with lead distributed systems architect\n- Community open source contributions\n\nOffice hours are held every Thursday at 3 PM. Read the full article online on our engineering blog.",
+    "label": 0,
+    "category": "grp_ham_newsletter",
+    "group_id": "grp_ham_newsletter",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Distributed Cache session #1296 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Distributed Cache session #1296 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Priya Sharma",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Auth Service session #1303 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Auth Service session #1303 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: David Chen",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: ML Pipeline session #1310 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that ML Pipeline session #1310 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Sarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Kubernetes Ingress session #1317 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Kubernetes Ingress session #1317 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Michael Scott",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Billing Microservice session #1324 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Billing Microservice session #1324 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Elena Rostova",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Search Indexer session #1331 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Search Indexer session #1331 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Marcus Vance",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Audit Logging session #1338 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Audit Logging session #1338 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Amit Patel",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Distributed Cache session #1345 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Distributed Cache session #1345 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Priya Sharma",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Auth Service session #1352 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Auth Service session #1352 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: David Chen",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: ML Pipeline session #1359 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that ML Pipeline session #1359 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Sarah Jenkins",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Kubernetes Ingress session #1366 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Kubernetes Ingress session #1366 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Michael Scott",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Billing Microservice session #1373 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Billing Microservice session #1373 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Elena Rostova",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Search Indexer session #1380 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Search Indexer session #1380 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Marcus Vance",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Reminder: Audit Logging session #1387 starts in 30 minutes",
+    "body": "Hello,\n\nThis is a quick reminder that Audit Logging session #1387 is starting shortly.\nPlease join online using the calendar invite link. If you need to reschedule, notify the organizer within 24 hours.\n\nMeeting organizer: Amit Patel",
+    "label": 0,
+    "category": "grp_ham_reminder",
+    "group_id": "grp_ham_reminder",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your PayPal account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your PayPal profile from an unknown location.\nPlease verify your credentials immediately at http://PayPal-security-check-2818.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Apple ID account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Apple ID profile from an unknown location.\nPlease verify your credentials immediately at http://Apple ID-security-check-2829.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Netflix account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Netflix profile from an unknown location.\nPlease verify your credentials immediately at http://Netflix-security-check-2840.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Google Workspace account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Google Workspace profile from an unknown location.\nPlease verify your credentials immediately at http://Google Workspace-security-check-2851.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Dropbox account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Dropbox profile from an unknown location.\nPlease verify your credentials immediately at http://Dropbox-security-check-2862.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Bank of America account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Bank of America profile from an unknown location.\nPlease verify your credentials immediately at http://Bank of America-security-check-2873.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Amazon account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Amazon profile from an unknown location.\nPlease verify your credentials immediately at http://Amazon-security-check-2884.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your PayPal account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your PayPal profile from an unknown location.\nPlease verify your credentials immediately at http://PayPal-security-check-2895.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Apple ID account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Apple ID profile from an unknown location.\nPlease verify your credentials immediately at http://Apple ID-security-check-2906.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Netflix account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Netflix profile from an unknown location.\nPlease verify your credentials immediately at http://Netflix-security-check-2917.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Google Workspace account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Google Workspace profile from an unknown location.\nPlease verify your credentials immediately at http://Google Workspace-security-check-2928.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Dropbox account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Dropbox profile from an unknown location.\nPlease verify your credentials immediately at http://Dropbox-security-check-2939.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Bank of America account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Bank of America profile from an unknown location.\nPlease verify your credentials immediately at http://Bank of America-security-check-2950.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "URGENT: Your Amazon account has been compromised",
+    "body": "Dear user,\n\nWe detected suspicious unauthorized access to your Amazon profile from an unknown location.\nPlease verify your credentials immediately at http://Amazon-security-check-2961.com/login to restore access and secure your account.\nFailure to do so will result in permanent suspension within 24 hours.",
+    "label": 1,
+    "category": "grp_spam_compromised",
+    "group_id": "grp_spam_compromised",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2649 processed for $200",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $200. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2649\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2660 processed for $350",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $350. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2660\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2671 processed for $500",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $500. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2671\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2682 processed for $650",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $650. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2682\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2693 processed for $800",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $800. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2693\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2704 processed for $950",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $950. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2704\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2715 processed for $1,100",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,100. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2715\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2726 processed for $1,250",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,250. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2726\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2737 processed for $1,400",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,400. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2737\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2748 processed for $1,550",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,550. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2748\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2759 processed for $1,700",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,700. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2759\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2770 processed for $1,850",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $1,850. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2770\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2781 processed for $2,000",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $2,000. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2781\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "INVOICE CONFIRMATION: Order #2792 processed for $2,150",
+    "body": "Geek Squad / Norton Antivirus Care Center\n\nDear Customer,\n\nYour annual subscription for Computer Protection Plan has been auto-renewed for $2,150. The charge will reflect on your bank statement within 24 hours.\n\nInvoice ID: GS-2792\nPayment Mode: Direct Auto-Debit\n\nIf you did not authorize this subscription renewal, call our fraud cancellation desk immediately at +1-800-555-0199 within 24 hours to speak with a billing agent and stop the unauthorized debit.\n\nCustomer Support Team",
+    "label": 1,
+    "category": "grp_spam_fake_invoice",
+    "group_id": "grp_spam_fake_invoice",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2590 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2590 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2590.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2601 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2601 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2601.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2612 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2612 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2612.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2623 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2623 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2623.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2634 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2634 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2634.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2645 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2645 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2645.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2656 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2656 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2656.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2667 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2667 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2667.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2678 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2678 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2678.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2689 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2689 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2689.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2700 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2700 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2700.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2711 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2711 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2711.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2722 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2722 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2722.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Delivery Exception: Package #2733 pending address verification",
+    "body": "USPS / DHL Parcel Express Notice\n\nYour shipment #2733 cannot be delivered due to an incorrect postal code on file.\n\nA mandatory redelivery processing fee of $2.85 is required before your package can be rescheduled for drop-off.\n\nClick here immediately to confirm delivery address and clear fee: http://express-postal-redelivery-portal-2733.cc/pay\n\nPackages not claimed within 24 hours will be returned to sender or abandoned.",
+    "label": 1,
+    "category": "grp_spam_delivery",
+    "group_id": "grp_spam_delivery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $200/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $200 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2533.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $350/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $350 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2544.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $500/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $500 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2555.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $650/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $650 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2566.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $800/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $800 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2577.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $950/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $950 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2588.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,100/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,100 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2599.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,250/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,250 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2610.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,400/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,400 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2621.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,550/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,550 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2632.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,700/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,700 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2643.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $1,850/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $1,850 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2654.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $2,000/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $2,000 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2665.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Top Secret: Make $2,150/day with Automated Trading",
+    "body": "Discover the secret investment loophole that banks do not want you to know!\nStart with just $100 and earn $2,150 every 24 hours guaranteed.\nClick here to activate your auto-trader: http://profit-secret-2676.biz/start\nZero risk, 100% money back guarantee.",
+    "label": 1,
+    "category": "grp_spam_trading",
+    "group_id": "grp_spam_trading",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $200 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2407 in the amount of $200 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2407",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $350 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2418 in the amount of $350 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2418",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $500 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2429 in the amount of $500 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2429",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $650 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2440 in the amount of $650 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2440",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $800 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2451 in the amount of $800 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2451",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $950 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2462 in the amount of $950 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2462",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,100 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2473 in the amount of $1,100 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2473",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,250 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2484 in the amount of $1,250 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2484",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,400 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2495 in the amount of $1,400 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2495",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,550 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2506 in the amount of $1,550 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2506",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,700 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2517 in the amount of $1,700 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2517",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $1,850 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2528 in the amount of $1,850 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2528",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $2,000 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2539 in the amount of $2,000 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2539",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Payout Notification: $2,150 approved for transfer",
+    "body": "Good day,\n\nYour application for government grant #2550 in the amount of $2,150 has been approved.\nTo release funds directly into your account, wire the $195 clearance fee to our escrow agent today.\nContact agent via telegram: @grant_payout_2550",
+    "label": 1,
+    "category": "grp_spam_payout",
+    "group_id": "grp_spam_payout",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $200 voucher from TechGear Direct",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $200 shopping voucher redeemable at TechGear Direct.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2076.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $350 voucher from FreshGrocer",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $350 shopping voucher redeemable at FreshGrocer.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2087.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $500 voucher from CloudBooks",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $500 shopping voucher redeemable at CloudBooks.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2098.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $650 voucher from Apex Hardware",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $650 shopping voucher redeemable at Apex Hardware.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2109.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $800 voucher from Metro Coffee Roasters",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $800 shopping voucher redeemable at Metro Coffee Roasters.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2120.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $950 voucher from Urban Apparel",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $950 shopping voucher redeemable at Urban Apparel.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2131.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,100 voucher from Nordic Home",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,100 shopping voucher redeemable at Nordic Home.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2142.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,250 voucher from TechGear Direct",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,250 shopping voucher redeemable at TechGear Direct.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2153.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,400 voucher from FreshGrocer",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,400 shopping voucher redeemable at FreshGrocer.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2164.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,550 voucher from CloudBooks",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,550 shopping voucher redeemable at CloudBooks.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2175.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,700 voucher from Apex Hardware",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,700 shopping voucher redeemable at Apex Hardware.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2186.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $1,850 voucher from Metro Coffee Roasters",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $1,850 shopping voucher redeemable at Metro Coffee Roasters.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2197.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $2,000 voucher from Urban Apparel",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $2,000 shopping voucher redeemable at Urban Apparel.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2208.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Claim your free $2,150 voucher from Nordic Home",
+    "body": "Congratulations!\n\nYou have been selected as a lucky customer to receive a $2,150 shopping voucher redeemable at Nordic Home.\nClaim your code before it expires at midnight: http://free-gift-vouchers-2219.xyz/claim\nComplete short sponsor survey to unlock code.",
+    "label": 1,
+    "category": "grp_spam_voucher",
+    "group_id": "grp_spam_voucher",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2102.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2113.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2124.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2135.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2146.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2157.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2168.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2179.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2190.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2201.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2212.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2223.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2234.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "Special Discount: 80% OFF on all prescription medications",
+    "body": "Buy genuine medications online with no prescription required!\nDiscreet overnight worldwide shipping.\nViagra, Cialis, Levitra at wholesale prices.\nVisit http://rx-online-pharmacy-2245.org to place your order now.",
+    "label": 1,
+    "category": "grp_spam_rx",
+    "group_id": "grp_spam_rx",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2684 for $200 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2684 matched the winning draw numbers for the cash prize of $200.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2695 for $350 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2695 matched the winning draw numbers for the cash prize of $350.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2706 for $500 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2706 matched the winning draw numbers for the cash prize of $500.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2717 for $650 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2717 matched the winning draw numbers for the cash prize of $650.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2728 for $800 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2728 matched the winning draw numbers for the cash prize of $800.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2739 for $950 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2739 matched the winning draw numbers for the cash prize of $950.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2750 for $1,100 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2750 matched the winning draw numbers for the cash prize of $1,100.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2761 for $1,250 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2761 matched the winning draw numbers for the cash prize of $1,250.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2772 for $1,400 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2772 matched the winning draw numbers for the cash prize of $1,400.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2783 for $1,550 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2783 matched the winning draw numbers for the cash prize of $1,550.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2794 for $1,700 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2794 matched the winning draw numbers for the cash prize of $1,700.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2805 for $1,850 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2805 matched the winning draw numbers for the cash prize of $1,850.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2816 for $2,000 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2816 matched the winning draw numbers for the cash prize of $2,000.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  },
+  {
+    "subject": "WINNER NOTICE: Winning ticket #2827 for $2,150 draw",
+    "body": "International Mega Jackpot Lottery\n\nOfficial notice: Your ticket reference #2827 matched the winning draw numbers for the cash prize of $2,150.\n\nTo claim your jackpot cashier check, send your identity proof and $350 international clearance fee to our claim officer via Western Union.",
+    "label": 1,
+    "category": "grp_spam_lottery",
+    "group_id": "grp_spam_lottery",
+    "provenance": "synthetic_template"
+  }
+]
