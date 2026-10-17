@@ -1,0 +1,27 @@
+# Environments & Dependencies
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+apps/web/dist/
+apps/desktop/dist/
+
+# Databases & local state
+*.db
+*.sqlite
+*.sqlite3
+.env
+
+# Testing & Linting caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# OS files
+.DS_Store
+Thumbs.db

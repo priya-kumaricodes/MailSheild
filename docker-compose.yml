@@ -1,0 +1,28 @@
+services:
+  mailshield:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mailshield:2.1.0
+    container_name: mailshield-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - PROJECT_NAME=MailShield
+      - API_V1_STR=/api/v1
+      - VERSION=2.1.0
+      - DATABASE_URL=sqlite:////app/data/mailshield.db
+      - SECRET_KEY=${SECRET_KEY:-mailshield-production-secret-key-change-me}
+      - TOKEN_ENCRYPTION_KEY=${TOKEN_ENCRYPTION_KEY:-}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5173,http://localhost:8000}
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET:-}
+      - GOOGLE_REDIRECT_URI_WEB=${GOOGLE_REDIRECT_URI_WEB:-http://localhost:8000/gmail/callback}
+    volumes:
+      - mailshield_data:/app/data
+
+volumes:
+  mailshield_data:
+    driver: local

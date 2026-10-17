@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #04070c;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+}
+
+/* Atmospheric Vignette & Film Depth (inspired by Kage) */
+#vignette {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(130% 100% at 50% 40%, transparent 40%, rgba(2, 4, 8, 0.72) 100%);
+}
+
+#cyber-scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+  box-shadow: 0 0 12px #00f0ff;
+  animation: scanline 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 1; }
+  85% { opacity: 1; }
+  100% { transform: translateY(260px); opacity: 0; }
+}
+
+/* Custom cyber scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #152238;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff40;
+}
+
+/* Cinematic Glassmorphism panels with high contrast */
+.glass-panel {
+  background: rgba(6, 11, 20, 0.90);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(34, 56, 92, 0.85);
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.7);
+}
+
+.glass-card {
+  background: rgba(8, 15, 28, 0.86);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(40, 65, 105, 0.75);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5);
+}
+
+.surface-elevated {
+  background: #060b14;
+  border: 1px solid rgba(34, 56, 92, 0.85);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Staggered entrance for feature tokens */
+@keyframes token-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-token {
+  animation: token-reveal 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Cinematic Image Framing & Vignette (inspired by Kage) */
+.cinematic-frame {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  background: rgba(4, 7, 12, 0.7);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.8), 0 0 35px -5px rgba(0, 240, 255, 0.15);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cinematic-frame:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.9), 0 0 45px -5px rgba(0, 240, 255, 0.25);
+}
+
+.cinematic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cinematic-frame:hover .cinematic-img {
+  transform: scale(1.025);
+}
+
+.cinematic-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.08) 0%, transparent 70%);
+  mix-blend-mode: screen;
+}
+
+.cinematic-scanline {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.3) 51%
+  );
+  background-size: 100% 4px;
+  opacity: 0.35;
+}
+
+/* Chapter 01 scanning highlight sweep */
+@keyframes laser-sweep {
+  0% {
+    top: -5%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 105%;
+    opacity: 0;
+  }
+}
+
+.cinematic-laser-sweep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #00f0ff 30%, #ffffff 50%, #00f0ff 70%, transparent 100%);
+  box-shadow: 0 0 12px #00f0ff, 0 0 25px rgba(0, 240, 255, 0.6);
+  pointer-events: none;
+  z-index: 10;
+  animation: laser-sweep 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(120% 90% at 50% 50%, transparent 40%, rgba(4, 7, 12, 0.85) 100%);
+  pointer-events: none;
+}
+
+/* Cinematic View Transitions between tabs */
+.cinematic-view-transition {
+  will-change: transform, opacity;
+}
+
+@keyframes cinematic-view-in {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.992);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.cinematic-view-enter {
+  animation: cinematic-view-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cinematic-view-active {
+  opacity: 1;
+  transform: none;
+}
+
+/* Staggered reveals for view children */
+@keyframes cinematic-stagger-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cinematic-view-enter .cinematic-stagger-1 {
+  animation: cinematic-stagger-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.04s both;
+}
+
+.cinematic-view-enter .cinematic-stagger-2 {
+  animation: cinematic-stagger-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+}
+
+.cinematic-view-enter .cinematic-stagger-3 {
+  animation: cinematic-stagger-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .cinematic-laser-sweep {
+    display: none !important;
+  }
+  .cinematic-frame:hover .cinematic-img {
+    transform: none !important;
+  }
+  .cinematic-interactive-frame {
+    transform: none !important;
+  }
+  .cinematic-view-enter,
+  .cinematic-view-enter .cinematic-stagger-1,
+  .cinematic-view-enter .cinematic-stagger-2,
+  .cinematic-view-enter .cinematic-stagger-3 {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+

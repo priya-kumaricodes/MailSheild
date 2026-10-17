@@ -1,0 +1,18 @@
+[project]
+name = "mailshield"
+version = "2.1.0"
+description = "Explainable Spam Classification Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["B008", "E501"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "ml/src"]
+testpaths = ["ml/tests", "backend/tests"]
