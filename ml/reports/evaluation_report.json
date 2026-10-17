@@ -1,0 +1,104 @@
+{
+  "logistic_regression": {
+    "model_name": "logistic_regression",
+    "dataset_name": "test",
+    "num_samples": 38,
+    "threshold": 0.5,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "false_positive_rate": 0.0,
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "brier_score": 0.038,
+    "confusion_matrix": {
+      "tn": 19,
+      "fp": 0,
+      "fn": 0,
+      "tp": 19
+    },
+    "score_type": "probability",
+    "calibrated": true,
+    "calibration_status": "evaluated_well_calibrated",
+    "confusion_matrix_grid": [
+      [
+        19,
+        0
+      ],
+      [
+        0,
+        19
+      ]
+    ],
+    "inference_latency_ms": 0.0019
+  },
+  "naive_bayes": {
+    "model_name": "naive_bayes",
+    "dataset_name": "test",
+    "num_samples": 38,
+    "threshold": 0.5,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "false_positive_rate": 0.0,
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "brier_score": 0.0,
+    "confusion_matrix": {
+      "tn": 19,
+      "fp": 0,
+      "fn": 0,
+      "tp": 19
+    },
+    "score_type": "probability",
+    "calibrated": false,
+    "calibration_status": "uncalibrated_log_likelihood",
+    "confusion_matrix_grid": [
+      [
+        19,
+        0
+      ],
+      [
+        0,
+        19
+      ]
+    ],
+    "inference_latency_ms": 0.003
+  },
+  "linear_svm": {
+    "model_name": "linear_svm",
+    "dataset_name": "test",
+    "num_samples": 38,
+    "threshold": 0.5,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "false_positive_rate": 0.0,
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "brier_score": 0.0054,
+    "confusion_matrix": {
+      "tn": 19,
+      "fp": 0,
+      "fn": 0,
+      "tp": 19
+    },
+    "score_type": "probability",
+    "calibrated": true,
+    "calibration_status": "evaluated_well_calibrated",
+    "confusion_matrix_grid": [
+      [
+        19,
+        0
+      ],
+      [
+        0,
+        19
+      ]
+    ],
+    "inference_latency_ms": 0.026
+  }
+}
