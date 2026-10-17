@@ -1,0 +1,147 @@
+{
+  "evaluation_type": "grouped_template_holdout",
+  "description": "Strict partition grouping template families and campaigns to prevent cross-split leakage",
+  "dataset_split": {
+    "total_samples": 248,
+    "train_samples": 148,
+    "validation_samples": 64,
+    "test_samples": 36,
+    "train_spam_ratio": 0.5,
+    "val_spam_ratio": 0.5,
+    "test_spam_ratio": 0.5
+  },
+  "models": {
+    "logistic_regression": {
+      "model_name": "logistic_regression",
+      "dataset_name": "strict_holdout_test",
+      "num_samples": 36,
+      "threshold": 0.5,
+      "accuracy": 0.9722,
+      "precision": 1.0,
+      "recall": 0.9444,
+      "f1_score": 0.9714,
+      "false_positive_rate": 0.0,
+      "pr_auc": 0.9944,
+      "roc_auc": 0.9938,
+      "brier_score": 0.1717,
+      "confusion_matrix": {
+        "tn": 18,
+        "fp": 0,
+        "fn": 1,
+        "tp": 17
+      },
+      "score_type": "probability",
+      "calibrated": true,
+      "calibration_status": "evaluated_moderate_calibration",
+      "confusion_matrix_grid": [
+        [
+          18,
+          0
+        ],
+        [
+          1,
+          17
+        ]
+      ],
+      "threshold_selection": {
+        "fp_cost": 5.0,
+        "fn_cost": 1.0,
+        "max_fpr": 0.05,
+        "constraint_met": true,
+        "selected_threshold": 0.5,
+        "utility": 32.0,
+        "validation_fpr": 0.0,
+        "validation_f1": 1.0,
+        "warning": null
+      }
+    },
+    "naive_bayes": {
+      "model_name": "naive_bayes",
+      "dataset_name": "strict_holdout_test",
+      "num_samples": 36,
+      "threshold": 0.7,
+      "accuracy": 0.7222,
+      "precision": 1.0,
+      "recall": 0.4444,
+      "f1_score": 0.6154,
+      "false_positive_rate": 0.0,
+      "pr_auc": 0.9642,
+      "roc_auc": 0.963,
+      "brier_score": 0.1014,
+      "confusion_matrix": {
+        "tn": 18,
+        "fp": 0,
+        "fn": 10,
+        "tp": 8
+      },
+      "score_type": "probability",
+      "calibrated": false,
+      "calibration_status": "uncalibrated_log_likelihood",
+      "confusion_matrix_grid": [
+        [
+          18,
+          0
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "threshold_selection": {
+        "fp_cost": 5.0,
+        "fn_cost": 1.0,
+        "max_fpr": 0.05,
+        "constraint_met": true,
+        "selected_threshold": 0.7,
+        "utility": 28.0,
+        "validation_fpr": 0.0,
+        "validation_f1": 0.9677,
+        "warning": null
+      }
+    },
+    "linear_svm": {
+      "model_name": "linear_svm",
+      "dataset_name": "strict_holdout_test",
+      "num_samples": 36,
+      "threshold": 0.5,
+      "accuracy": 0.9167,
+      "precision": 0.8947,
+      "recall": 0.9444,
+      "f1_score": 0.9189,
+      "false_positive_rate": 0.1111,
+      "pr_auc": 0.9944,
+      "roc_auc": 0.9938,
+      "brier_score": 0.0753,
+      "confusion_matrix": {
+        "tn": 16,
+        "fp": 2,
+        "fn": 1,
+        "tp": 17
+      },
+      "score_type": "probability",
+      "calibrated": true,
+      "calibration_status": "evaluated_well_calibrated",
+      "confusion_matrix_grid": [
+        [
+          16,
+          2
+        ],
+        [
+          1,
+          17
+        ]
+      ],
+      "threshold_selection": {
+        "fp_cost": 5.0,
+        "fn_cost": 1.0,
+        "max_fpr": 0.05,
+        "constraint_met": true,
+        "selected_threshold": 0.5,
+        "utility": 32.0,
+        "validation_fpr": 0.0,
+        "validation_f1": 1.0,
+        "warning": null
+      }
+    }
+  }
+}

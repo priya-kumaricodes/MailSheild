@@ -1,0 +1,16 @@
+{
+  "name": "mailshield-desktop",
+  "version": "2.1.0",
+  "description": "MailShield Desktop — Offline Explainable Spam Classification",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && electron .",
+    "pack": "tsc",
+    "package": "tsc && node scripts/package_app.js"
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "typescript": "^5.7.3"
+  }
+}

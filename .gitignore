@@ -1,0 +1,126 @@
+# ==============================================================================
+# MailShield — Git Ignore Rules for Public Repository
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Secret Files (CRITICAL: Never commit real credentials)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+# Explicitly whitelist example templates so users know how to configure
+!.env.example
+!apps/web/.env.example
+!apps/desktop/.env.example
+
+# Private Keys, Certificates, and Tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.pkcs12
+id_rsa*
+id_ecdsa*
+id_ed25519*
+*.secret
+
+# OAuth Client Credentials & Downloaded Tokens
+client_secret*.json
+credentials*.json
+token.json
+gmail_tokens*.json
+
+# ------------------------------------------------------------------------------
+# 2. Databases, Local State, and User Email Data
+# ------------------------------------------------------------------------------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.dump
+*.sql
+
+# User Data & Private Email Stores
+data/
+user_data/
+inbox_scans/
+exports/
+*.eml_export
+
+# PRESERVE curated ML benchmark training and evaluation datasets:
+!ml/data/
+!ml/data/seed_corpus.json
+!ml/data/multilingual_corpus.json
+
+# ------------------------------------------------------------------------------
+# 3. Build Outputs & Packaged Distributables
+# ------------------------------------------------------------------------------
+dist/
+build/
+*.egg-info/
+apps/web/dist/
+apps/desktop/dist/
+
+# TypeScript Build Info Cache
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# 4. Dependencies & Virtual Environments
+# ------------------------------------------------------------------------------
+node_modules/
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+.installed.cfg
+pip-wheel-metadata/
+
+# ------------------------------------------------------------------------------
+# 5. Logs & Runtime Diagnostics
+# ------------------------------------------------------------------------------
+*.log
+*.log.*
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 6. Testing, Linting & Coverage
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.nyc_output/
+.eslintcache
+
+# ------------------------------------------------------------------------------
+# 7. Operating System & IDE Clutter
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
